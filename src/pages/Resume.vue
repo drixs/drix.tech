@@ -13,7 +13,7 @@
                     Drix Lloyd Ponteres
                 </h4>
                 <p class="t-sm">
-                    hello@drix.dev
+                    hello@drix.tech
                 </p>
             </div>
         </div>
@@ -34,49 +34,38 @@
                             UX Engineer
                         </p>
                         <p class="t-sm c-tertiary">
-                            hello@drix.dev
+                            hello@drix.tech
                         </p>
                     </div>
                 </div>
-                <p class="description t-semi-sm">
-                    An individual who has a passion for design and front-end technologies with a meticulous attention to detail who is constantly looking further to improve technical and creative skills.
-                </p>
                 <div class="skills__container">
-                    <h2 class="p-h2 skills__container-name semibold">
+                    <h2 class="p-h2 skills__container-name semibold alt-font">
                         Specialties
                     </h2>
                     <div class="skills__container-list">
                         <ul class="skills__container-list">
-                            <li
+                            <Tag
                                 v-for="specialty in specialties"
                                 :key="specialty"
-                                class="t-sm c-quaternary"
-                            >
-                                <p>
-                                    {{ specialty }}
-                                </p>
-                            </li>
+                                :label="specialty"
+                            />
                         </ul>
                     </div>
                 </div>
                 <div class="skills__container">
-                    <h2 class="p-h2 skills__container-name semibold">
+                    <h2 class="p-h2 skills__container-name semibold alt-font">
                         Others
                     </h2>
                     <ul class="skills__container-list">
-                        <li
+                        <Tag
                             v-for="other in others"
                             :key="other"
-                            class="t-sm c-quaternary"
-                        >
-                            <p>
-                                {{ other }}
-                            </p>
-                        </li>
+                            :label="other"
+                        />
                     </ul>
                 </div>
                 <div class="reference__container">
-                    <h2 class="p-h2 reference__container-name semibold">
+                    <h2 class="p-h2 reference__container-name semibold alt-font">
                         Character Reference
                     </h2>
                     <ul class="reference__container-list">
@@ -93,44 +82,13 @@
                 </div>
             </section>
             <section class="right">
-                <ul class="company-list">
-                    <li
-                        v-for="company in companies"
-                        :key="company"
-                        class="company-list__item"
-                    >
-                        <h1
-                            class="h1-alt company-list__item-name"
-                            @click="goToLink(company.link)"
-                        >
-                            {{ company.name }}
-                        </h1>
-                        <ul class="company-list__item-content">
-                            <li
-                                v-for="role in company.roles"
-                                :key="role"
-                                class="role"
-                            >
-                                <p class="role__name t-md bold">
-                                    {{ role.name }}
-                                </p>
-                                <p class="role__duration t-regular">
-                                    {{ role.duration }}
-                                </p>
-                                <ul class="role__duties">
-                                    <li
-                                        v-for="duty in role.duties"
-                                        :key="duty"
-                                    >
-                                        <p class="t-regular c-tertiary">
-                                            {{ duty }}
-                                        </p>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                <AffiliationItem
+                    v-for="affiliation in affiliations"
+                    :key="affiliation"
+                    :name="affiliation.name"
+                    :roles="affiliation.role"
+                    :image="affiliation.image"
+                />
             </section>
         </main>
     </ContentBody>
@@ -138,17 +96,89 @@
 
 <script>
     import ContentBody from '../components/generics/ContentBody.vue';
+    import Tag from '../components/generics/Tag.vue';
+    import AffiliationItem from '@/components/AffiliationItem.vue';
 
     export default {
         // eslint-disable-next-line vue/multi-word-component-names
         name: 'Resume',
 
         components: {
-            ContentBody
+            ContentBody,
+            Tag,
+            AffiliationItem
         },
 
         data() {
             return {
+                affiliations: [
+                    {
+                        name: 'Todays Carolinian',
+                        role: [
+                            {
+                                name: 'Senior Graphic Designer',
+                                year: '2018',
+                                description: [
+                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+                                ]
+                            },
+                            {
+                                name: 'Graphic Designer',
+                                year: '2017',
+                                description: [
+                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+                                ]
+                            },
+                        ],
+                        image: 'https://picsum.photos/400/300'
+                    },
+                    {
+                        name: 'USC Computer Engineering Council',
+                        role: [
+                            {
+                                name: 'Senior Graphic Designer',
+                                year: '2018',
+                                description: [
+                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+                                ]
+                            },
+                            {
+                                name: 'Graphic Designer',
+                                year: '2017',
+                                description: [
+                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+                                ]
+                            },
+                        ],
+                        image: 'https://picsum.photos/400/300'
+                    },
+                    {
+                        name: 'HQZen.com',
+                        role: [
+                            {
+                                name: 'Senior Graphic Designer',
+                                year: '2018',
+                                description: [
+                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+                                ]
+                            },
+                            {
+                                name: 'Graphic Designer',
+                                year: '2017',
+                                description: [
+                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+                                ]
+                            },
+                        ],
+                        image: 'https://picsum.photos/400/300'
+                    }
+                ],
                 specialties: [
                     'Vue.js','HTML','CSS','Figma','UI Design','User Experience',
                     'Logo Design', 'Graphic Design','Adobe Suite Tools','MJML','Email Design','Bootstrap','Vuetify'
@@ -160,7 +190,7 @@
                     {
                         name: 'Drix Lloyd Ponteres',
                         position: 'UX Engineer',
-                        email: 'hello@drix.dev'
+                        email: 'hello@drix.tech'
                     }
                 ],
                 references: [
@@ -318,6 +348,14 @@
 <style lang="scss" scoped>
     @import 'src/stylesheets/styles.scss';
 
+    .container {
+        padding: 40px 0;
+
+        @media #{$mobile} {
+            padding: 32px 32px;
+        }
+    }
+
     p {
         line-height: 1.5;
     }
@@ -333,12 +371,15 @@
         }
     }
 
+    $navbar-height: 60px;
+    $padding-height: 40px;
+
     .left {
         @include flex-column();
-        gap: 32px;
+        gap: 64px;
         height: max-content;
         position: sticky;
-        top: 140px;
+        top: calc($navbar-height + $padding-height);
 
         @media #{$tablet} {
             position: unset;
@@ -369,11 +410,7 @@
                 &-list {
                     display: flex;
                     flex-wrap: wrap;
-                    // gap: 12px;
-                    // column-gap: 28px;
-                    // row-gap: 12px;
-                    column-gap: 20px;
-                    row-gap: 4px;
+                    gap: 12px;
 
                     .bullet {
                         color: rgba(255,255,255,.2)
@@ -399,54 +436,8 @@
     }
 
     .right {
-
-        .company-list {
-            @include flex-column();
-            gap: 64px;
-
-            &__item {
-                display: flex;
-                flex-direction: column;
-                gap: 24px;
-
-                &-name {
-                    text-decoration: underline;
-                    text-transform: uppercase;
-                    color: $white;
-                    font-size: 24px;
-                    cursor: pointer;
-                    width: max-content;
-                    transition: .2s all ease-in-out;
-
-                    @media #{$tablet} {
-                        font-size: 20px;
-                    }
-
-                    &:hover {
-                        color: $gray-500;
-                    }
-                }
-
-                &-content {
-                    @include flex-column();
-                    gap: 24px;
-                }
-
-                .role {
-                    @include flex-column();
-                    gap: 8px;
-
-                    &__duration {
-                        color: $gray-300;
-                    }
-
-                    &__duties {
-                        @include flex-column();
-                        gap: 12px;
-                    }
-                }
-            }
-        }
+        @include flex-column();
+        gap: 64px;
     }
 
     .avatar-sticky-container {
@@ -470,7 +461,8 @@
         display: flex;
         align-items: center;
         gap: 12px;
-        background: $white;
+        background-color: rgba($color: $white, $alpha: 0.15);
+        backdrop-filter: blur(80px);
         padding: 12px 150px;
         position: absolute;
         top: 60px;
@@ -492,6 +484,7 @@
         &__information {
             @include flex-column;
             gap: 2px;
+            color: $white;
         }
     }
 

@@ -1,11 +1,14 @@
 <template>
     <div class="work-item">
-        <div class="work-item__image">
-            <img src="" alt="">
+        <div class="work-item__image-container">
+            <img
+                src="https://picsum.photos/400/300"
+                alt="Work item"
+            >
         </div>
         <div class="work-item__details">
             <p class="title p-h3 regular">
-                Rediscovering Cebu’s Tourism after a Global Pandemic with Discover Cebu
+                Rediscovering Cebu’s Tourism after a Global Pandemic with Discover Cebu Lorem ipsum dolor sit
             </p>
             <p class="description t-regular c-secondary">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quisquam
@@ -56,11 +59,27 @@
             cursor: pointer;
         }
 
-        &__image {
+        // &__image {
+        //     width: 100%;
+        //     height: 126px;
+        //     background: #fff;
+        //     border-radius: 8px;
+        // }
+
+        &__image-container {
+            overflow: hidden;  /* Hide anything outside the container */
+            position: relative;
+            height: 130px;
             width: 100%;
-            height: 126px;
-            background: #fff;
             border-radius: 8px;
+
+            img {
+                object-fit: cover; /* Fit and clip the image without distortion */
+                position: absolute; /* Ensure image is positioned correctly */
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
         }
 
         &__details {

@@ -1,16 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '/src/pages/Home.vue';
-import Works from '/src/pages/Works.vue';
 import Resume from '/src/pages/Resume.vue';
 
 const routes = [
     {
         path: '/',
         component: Home,
-    },
-    {
-        path: '/works',
-        component: Works,
     },
     {
         path: '/resume',
