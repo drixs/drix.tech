@@ -119,16 +119,16 @@
                                 name: 'Senior Graphic Designer',
                                 year: '2018',
                                 description: [
-                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
-                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+                                    'As a Software Developer, I am responsible for designing, coding, and maintaining software applications to meet the needs of our clients.',
+                                    'I work closely with a team of developers, product managers, and designers to create high-quality software solutions.'
                                 ]
                             },
                             {
                                 name: 'Graphic Designer',
                                 year: '2017',
                                 description: [
-                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
-                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+                                    'As a Software Developer, I am responsible for designing, coding, and maintaining software applications to meet the needs of our clients.',
+                                    'I work closely with a team of developers, product managers, and designers to create high-quality software solutions.'
                                 ]
                             },
                         ],
@@ -141,16 +141,16 @@
                                 name: 'Senior Graphic Designer',
                                 year: '2018',
                                 description: [
-                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
-                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+                                    'As a Software Developer, I am responsible for designing, coding, and maintaining software applications to meet the needs of our clients.',
+                                    'I work closely with a team of developers, product managers, and designers to create high-quality software solutions.'
                                 ]
                             },
                             {
                                 name: 'Graphic Designer',
                                 year: '2017',
                                 description: [
-                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
-                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+                                    'As a Software Developer, I am responsible for designing, coding, and maintaining software applications to meet the needs of our clients.',
+                                    'I work closely with a team of developers, product managers, and designers to create high-quality software solutions.'
                                 ]
                             },
                         ],
@@ -163,16 +163,16 @@
                                 name: 'Senior Graphic Designer',
                                 year: '2018',
                                 description: [
-                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
-                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+                                    'As a Software Developer, I am responsible for designing, coding, and maintaining software applications to meet the needs of our clients.',
+                                    'I work closely with a team of developers, product managers, and designers to create high-quality software solutions.'
                                 ]
                             },
                             {
                                 name: 'Graphic Designer',
                                 year: '2017',
                                 description: [
-                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
-                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+                                    'As a Software Developer, I am responsible for designing, coding, and maintaining software applications to meet the needs of our clients.',
+                                    'I work closely with a team of developers, product managers, and designers to create high-quality software solutions.'
                                 ]
                             },
                         ],

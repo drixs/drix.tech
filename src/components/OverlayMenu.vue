@@ -94,6 +94,7 @@
 
                 h2 {
                     text-transform: uppercase;
+                    margin-top: 2px;
                 }
 
                 &:hover {

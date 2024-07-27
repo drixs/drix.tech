@@ -25,7 +25,7 @@
             <p
                 v-for="desc in role.description"
                 :key="desc"
-                class="affiliation-item__role-description t-regular"
+                class="affiliation-item__role-description t-semi-sm"
             >
                 {{ desc }}
             </p>
@@ -63,7 +63,6 @@
         @include clear-list-formatting();
         @include flex-column();
         gap: 24px;
-        border: 2px solid red;
 
         &__image-container {
             overflow: hidden;  /* Hide anything outside the container */
@@ -92,7 +91,7 @@
 
             &-description {
                 line-height: 150%;
-                color: $gray-600;
+                color: $gray-500;
             }
         }
     }
