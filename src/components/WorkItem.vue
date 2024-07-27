@@ -18,9 +18,9 @@
         <div class="work-item__tags">
             <ul>
                 <Tag
-                    v-for="i in dummyLabels"
-                    :key="i"
-                    :label="i"
+                    v-for="tag in formattedTags"
+                    :key="tag"
+                    :label="tag"
                 />
             </ul>
         </div>
@@ -29,12 +29,43 @@
 
 <script setup>
     import Tag from '@/components/generics/Tag.vue';
+    import { computed } from "vue";
 
-    const dummyLabels = [
+    const tags = [
         'Graphic Design',
         'UX Research',
-        'UI Design'
+        'UI Design',
+        'Case Study',
+        'Landing Page'
     ]
+
+    // Define the tags array as a reactive reference
+    // const tags = ref(['Tag1', 'Tag2', 'Tag3', 'Tag4', 'Tag5']);
+
+    // Function to format tags
+    function formatTags(tagsArray) {
+        if (!Array.isArray(tagsArray)) {
+            throw new Error('Input must be an array');
+        }
+
+        const maxDisplay = 2; // Number of tags to display before truncating
+        const totalTags = tagsArray.length;
+
+        if (totalTags <= maxDisplay) {
+            return tagsArray; // Return as is if the array length is less than or equal to maxDisplay
+        }
+
+        // Extract the first `maxDisplay` elements
+        const displayedTags = tagsArray.slice(0, maxDisplay);
+
+        // Add the "n more" part
+        return [...displayedTags, `${totalTags - maxDisplay} more`];
+    //     return displayedTags;
+    }
+
+    // Compute the formatted tags
+    const formattedTags = computed(() => formatTags(tags));
+
 </script>
 
 <style lang="scss" scoped>

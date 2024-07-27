@@ -376,7 +376,7 @@
 
     .left {
         @include flex-column();
-        gap: 64px;
+        gap: 40px;
         height: max-content;
         position: sticky;
         top: calc($navbar-height + $padding-height);
@@ -394,11 +394,23 @@
                 width: 60px;
                 height: 60px;
                 border-radius: 50%;
+
+                @media #{$mobile-small} {
+                    width: 40px;
+                    height: 40px;
+                }
             }
 
             &-information {
                 @include flex-column;
                 gap: 2px;
+
+                @media #{$mobile-small} {
+                    h3 {
+                        font-size: 16px;
+                    }
+                }
+
             }
         }
 
@@ -461,14 +473,15 @@
         display: flex;
         align-items: center;
         gap: 12px;
-        background-color: rgba($color: $white, $alpha: 0.15);
-        backdrop-filter: blur(80px);
+        background-color: rgba($color: $gray-900, $alpha: 1);
+        // backdrop-filter: blur(180px);
         padding: 12px 150px;
         position: absolute;
         top: 60px;
         left: 0;
         right: 0;
         width: 100%;
+        border-bottom: 0.5px solid $gray-700;
         transition: .1s all ease-in-out;
 
         @media #{$mobile} {

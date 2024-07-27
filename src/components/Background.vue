@@ -26,6 +26,7 @@
         overflow: hidden;
         z-index: -1;
         background-color: $black;
+        background-color: #0D0D0D;
 
         &__circle {
 
