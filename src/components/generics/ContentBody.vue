@@ -15,13 +15,13 @@
 
     .container {
         margin: 0 auto;
-        padding-block: 80px;
         width: min(calc(100vw - 120px), 1000px);
         height: inherit;
-        color: white;
+        color: $white;
+        padding-bottom: 64px;
 
         @media #{$mobile} {
-            padding: 40px 20px;
+            padding: 32px;
             width: 100%;
         }
     }

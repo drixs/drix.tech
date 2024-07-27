@@ -51,7 +51,7 @@
 <style lang="scss">
 
     html {
-        background: #171923 !important;
+        background: #0D0D0D !important;
     }
 
     .content {

@@ -2,32 +2,24 @@
     <nav id="nav">
         <ul>
             <li class="nav-item">
-                <h1 class="h1-alt nav-item__left">
-                    hello@drix.dev
+                <h1 class="alt-font nav-item__left">
+                    drix.tech
                 </h1>
             </li>
             <li>
-                <Button
+                <i
                     @click="$emit('toggle-menu')"
-                    class="transparent nav-item__right"
-                >
-                    Menu
-                </Button>
+                    class="fa-solid fa-circle-dot"
+                ></i>
             </li>
         </ul>
     </nav>
 </template>
 
 <script>
-    import Button from '/src/components/generics/Button.vue';
-
     export default {
         // eslint-disable-next-line vue/multi-word-component-names
-        name: 'Navbar',
-
-        components: {
-            Button
-        }
+        name: 'Navbar'
     }
 </script>
 
@@ -35,22 +27,23 @@
     @import 'src/stylesheets/styles.scss';
 
     #nav {
-        padding: 0 150px;
         height: 60px;
-        background: rgba(247, 250, 252, .1);
+        background-color: $black;
         backdrop-filter: blur(50px);
         display: flex;
         align-items: center;
         position: sticky;
         top: 0;
         z-index: 999;
+        border-bottom: 0.5px solid $gray-800;
 
-        @media only screen and (max-width: 744px) {
-            padding: 0 20px;
+        @media #{$tablet} {
+            padding: 0 32px;
         }
 
         ul {
-            width: 100%;
+            width: 720px;
+            margin: auto;
             list-style: none;
             display: flex;
             align-items: center;
@@ -61,6 +54,14 @@
                 font-size: 12px;
                 text-transform: uppercase;
             }
+
+            @media #{$tablet} {
+                width: 100%;
+            }
+        }
+
+        i {
+            cursor: pointer;
         }
     }
 </style>

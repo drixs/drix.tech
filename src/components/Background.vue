@@ -1,9 +1,9 @@
 <template>
     <!-- <div class="overlay"></div> -->
     <div class="background">
-        <div class="background__circle-1"></div>
+        <!-- <div class="background__circle-1"></div>
         <div class="background__circle-2"></div>
-        <div class="background__circle-3"></div>
+        <div class="background__circle-3"></div> -->
     </div>
 </template>
 
@@ -25,6 +25,8 @@
         height: 100%;
         overflow: hidden;
         z-index: -1;
+        background-color: $black;
+        background-color: #0D0D0D;
 
         &__circle {
 

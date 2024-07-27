@@ -8,21 +8,14 @@
                 class="menu-list__item"
                 @click="changeRoute('/')"
             >
-                <h2 class="h1-alt p-h2 regular">Home</h2>
-                <i class="fa-solid fa-arrow-right"></i>
-            </li>
-            <li
-                class="menu-list__item"
-                @click="changeRoute('/works')"
-            >
-                <h2 class="h1-alt p-h2 regular">Works</h2>
+                <h2 class="h1-alt p-h2 regular alt-font">Home</h2>
                 <i class="fa-solid fa-arrow-right"></i>
             </li>
             <li
                 class="menu-list__item"
                 @click="changeRoute('/resume')"
             >
-                <h2 class="h1-alt p-h2 regular">Resume</h2>
+                <h2 class="h1-alt p-h2 regular alt-font">Resume</h2>
                 <i class="fa-solid fa-arrow-right"></i>
             </li>
         </ul>
@@ -30,7 +23,6 @@
 </template>
 
 <script>
-
     export default {
         name: 'OverlayMenu',
 
@@ -102,6 +94,7 @@
 
                 h2 {
                     text-transform: uppercase;
+                    margin-top: 2px;
                 }
 
                 &:hover {

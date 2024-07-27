@@ -2,18 +2,24 @@
     <ContentBody>
         <header class="cover">
             <img src="https://picsum.photos/id/2/900/1900" alt="">
-            <h2 class="title semibold">
+            <h2 class="title semibold alt-font">
                 ElevateEase: Streamlining User Journeys for Seamless Experiences
             </h2>
-            <div class="tags-container">
-                <p
+            <!-- <p
+                v-for="tag in tags"
+                :key="tag"
+                class="tag t-tiny"
+            >
+                {{ tag }}
+            </p> -->
+            <div class="layer-blur"></div>
+            <ul class="tags-container">
+                <Tag
                     v-for="tag in tags"
                     :key="tag"
-                    class="tag t-tiny"
-                >
-                    {{ tag }}
-                </p>
-            </div>
+                    :label="tag"
+                />
+            </ul>
         </header>
         <main class="main">
             <p class="main__text t-regular">
@@ -38,12 +44,14 @@
 
 <script>
     import ContentBody from '/src/components/generics/ContentBody.vue';
+    import Tag from '@/components/generics/Tag.vue';
 
     export default {
         name: 'WorksDetails',
 
         components: {
-            ContentBody
+            ContentBody,
+            Tag
         },
 
         data() {
@@ -80,8 +88,9 @@
         max-width: 1600px;
         height: 400px;
         overflow: hidden;
-        padding: 40px 150px;
-        border-radius: 0 0 24px 24px;
+        // padding: 40px 150px;
+        padding: 40px 150px 20px 150px;
+        border-radius: 0 0 16px 16px;
         margin: auto;
         background: rgba(0,0,0,0.4);
 
@@ -105,13 +114,14 @@
             height: 100%;
             z-index: -1;
             pointer-events: none;
+            opacity: 50%;
         }
 
         .tags-container {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
-            margin-top: 8px;
+            margin-top: 16px;
             max-width: 80%;
 
             @media #{$tablet} {
@@ -121,15 +131,31 @@
                 width: 100%;
             }
 
-            .tag {
-                background:rgba(255,255,255, 0.5);
-                color: $white;
-                border-radius: 4px;
-                padding: 4px 8px;
-                width: max-content;
-                white-space: nowrap;
-            }
+            // .tag {
+            //     background:rgba(255,255,255, 0.5);
+            //     color: $white;
+            //     border-radius: 4px;
+            //     padding: 4px 8px;
+            //     width: max-content;
+            //     white-space: nowrap;
+            // }
         }
+
+        // .layer-blur {
+        //     border: 2px solid red;
+        //     position: absolute;
+        //     bottom: -100px;
+        //     left: -140px;
+        //     right: 140px;
+        //     width: 100vw;
+        //     margin: auto;
+        //     height: 320px;
+        //     background: #0D0D0D;
+        //     // background: red;
+        //     filter: blur(39px);
+        //     backdrop-filter: blur(120px);
+        //     z-index: -1;
+        // }
     }
 
     .container {
@@ -144,6 +170,7 @@
             gap: 40px;
             align-items: center;
             margin: 0 120px;
+            color: #ADB6C4;
 
             @media #{$tablet} {
                 margin: 0;
@@ -173,7 +200,7 @@
     }
 
     p {
-        line-height: 1.5;
-        text-align: justify;
+        line-height: 160% !important;
+        // text-align: justify;
     }
 </style>
