@@ -186,7 +186,7 @@
                                 ]
                             }
                         ],
-                        image: '/imagesaffiliates/ridehero.png'
+                        image: '/images/affiliates/ridehero.png'
                     },
                     {
                         name: 'Symph',
