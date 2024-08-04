@@ -1,0 +1,105 @@
+@import '@/stylesheets/styles.scss';
+
+$navbar-height: 60px;
+$cover-height: 400px;
+$cover-height-mobile: 240px;
+
+.details-container {
+    padding-top: calc($navbar-height + $cover-height) !important;
+
+    @media #{$tablet} {
+        padding-top: calc($navbar-height + $cover-height-mobile) !important;
+    }
+
+    .main {
+        @include flex-column();
+        gap: 40px;
+        // align-items: center;
+        margin: 0 120px !important;
+        color: #ADB6C4;
+
+        @media #{$tablet} {
+            margin: 0 !important;
+        }
+
+        &__image-attachment {
+            @include flex-align-justify-center;
+            width: 100%;
+            height: 400px;
+            // padding: 0 20% !important;
+            overflow: hidden;
+            border-radius: 8px;
+
+            @media #{$tablet} {
+                padding: 0 !important;
+            }
+
+            @media #{$mobile} {
+                height: 160px;
+            }
+
+            img {
+                margin: 0;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+.details-cover {
+    @include flex-column();
+    justify-content: flex-end;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60px;
+    max-width: 1600px;
+    height: 400px;
+    overflow: hidden;
+    padding: 40px 150px 20px 150px !important;
+    border-radius: 0 0 16px 16px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+
+    @media #{$tablet} {
+        height: 240px;
+        padding: 12px 20px !important;
+    }
+
+    h2 {
+        width: 100%;
+        max-width: 640px;
+    }
+
+    img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        pointer-events: none;
+        opacity: 50%;
+    }
+
+    .tags-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 16px;
+        max-width: 80%;
+
+        @media #{$tablet} {
+            overflow-x: scroll;
+            flex-wrap: unset;
+            max-width: unset;
+            width: 100%;
+        }
+    }
+}
