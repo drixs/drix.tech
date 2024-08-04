@@ -37,7 +37,7 @@ const workDetails = ref([
                     includes high-quality concrete, crushed aggregates, and culverts. Additionally, they provide essential
                     equipment such as concrete mixers and other machinery necessary for Ready-Mix Concrete (RMC)
                     operations.‍`,
-        image: 'src/images/seawalk-industries/seawalk_cover.png',
+        image: '/images/seawalk-industries/seawalk_cover.png',
         name: 'seawalk-industries',
         tags: [
             'UI Design',
@@ -48,7 +48,7 @@ const workDetails = ref([
     {
         title: 'Designing the Official Logo for Protein Partner',
         description: `Last November 2023, I created the logo for Protein Partner PH, an online shop for protein-rich snacks.`,
-        image: 'src/images/protein-partner/protein-partner-thumbnail.png',
+        image: '/images/protein-partner/protein-partner-thumbnail.png',
         name: 'protein-partner-logo',
         tags: [
             'Logo Design',
@@ -61,7 +61,7 @@ const workDetails = ref([
                 10 in the world of computer science and programming through the interactive platform of Undersea Arcade.
                 Spearheaded by DEVCON Cebu officers, the event not only facilitated gameplay but also served as an
                 educational avenue for teaching programming fundamentals in an engaging manner.`,
-        image: 'src/images/devcon-kids-april-2023/devcon-kids-april-2023-cover.png',
+        image: '/images/devcon-kids-april-2023/devcon-kids-april-2023-cover.png',
         name: 'devcon-kids-april-2023',
         tags: [
             'Graphic Design',
@@ -73,7 +73,7 @@ const workDetails = ref([
         description: `As a preview of the officers of DEVCON Cebu for the year 2023, I designed a pubmat graphic highlighting each
                     officer's anticipated role within the organization, providing a comprehensive overview of the team set to lead
                     DEVCON Cebu in that year.`,
-        image: 'src/images/devcon-cebu-officers-2023/devcon-cebu-officers-2023-cover.png',
+        image: '/images/devcon-cebu-officers-2023/devcon-cebu-officers-2023-cover.png',
         name: 'devcon-cebu-2023-graphic',
         tags: [
             'Graphic Design',

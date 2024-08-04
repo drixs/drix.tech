@@ -131,7 +131,7 @@
                             ]
                         },
                     ],
-                    image: 'src/images/affiliates/hqzen.png'
+                    image: '/images/affiliates/hqzen.png'
                 },
                 {
                         name: 'Product Design Philippines',
@@ -144,7 +144,7 @@
                                 ]
                             }
                         ],
-                        image: 'src/images/affiliates/pdxph.png'
+                        image: '/images/affiliates/pdxph.png'
                     },
                     {
                         name: '24Strats',
@@ -157,7 +157,7 @@
                                 ]
                             }
                         ],
-                        image: 'src/images/affiliates/24strats.png'
+                        image: '/images/affiliates/24strats.png'
                     },
                     {
                         name: 'DEVCON Cebu',
@@ -171,7 +171,7 @@
                                 ]
                             }
                         ],
-                        image: 'src/images/affiliates/devcon-cebu.png'
+                        image: '/images/affiliates/devcon-cebu.png'
                     },
                     {
                         name: 'RideHero, Inc.',
@@ -186,7 +186,7 @@
                                 ]
                             }
                         ],
-                        image: 'src/images/affiliates/ridehero.png'
+                        image: '/imagesaffiliates/ridehero.png'
                     },
                     {
                         name: 'Symph',
@@ -201,7 +201,7 @@
                                 ]
                             }
                         ],
-                        image: 'src/images/affiliates/symph.png'
+                        image: '/images/affiliates/symph.png'
                     },
                     {
                         name: 'Today\'s Carolnian',
@@ -221,7 +221,7 @@
                                 ]
                             },
                         ],
-                        image: 'src/images/affiliates/todays-carolinian.png'
+                        image: '/images/affiliates/todays-carolinian.png'
                     },
                     {
                         name: 'USC Computer Engineering Council',
@@ -242,7 +242,7 @@
                                 ]
                             },
                         ],
-                        image: 'src/images/affiliates/cpe-council.png'
+                        image: '/images/affiliates/cpe-council.png'
                     }
                 ],
                 specialties: [

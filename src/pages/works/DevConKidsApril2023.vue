@@ -1,7 +1,7 @@
 <template>
     <div class="details-container">
         <header class="details-cover">
-            <img src="@/images/devcon-kids-april-2023/devcon-kids-april-2023-cover.png" alt="">
+            <img src="/images/devcon-kids-april-2023/devcon-kids-april-2023-cover.png" alt="">
             <h2 class="title semibold alt-font">
                 Designing the Collaterals for DEVCON Kids Code Camp April 2023
             </h2>
@@ -17,7 +17,7 @@
                 educational avenue for teaching programming fundamentals in an engaging manner.
             </p>
             <div class="main__image-attachment">
-                <img src="@/images/devcon-kids-april-2023/devcon-kids-april-2023-cover.png" alt="">
+                <img src="/images/devcon-kids-april-2023/devcon-kids-april-2023-cover.png" alt="">
             </div>
             <p class="main__text t-regular details-text">
                 As Vice President of Creatives, I designed teasers, event posters, and video backgrounds for the event.
@@ -26,7 +26,7 @@
                 educational goals.
             </p>
             <div class="main__image-attachment">
-                <img src="@/images/devcon-kids-april-2023/devcon-kids-april-2023-screenshot.png" alt="">
+                <img src="/images/devcon-kids-april-2023/devcon-kids-april-2023-screenshot.png" alt="">
             </div>
             <p class="main__text t-regular details-text">
                 The event turned out to be a resounding success. The kids, participants, and officers all had a wonderful
