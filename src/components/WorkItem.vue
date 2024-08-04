@@ -10,14 +10,14 @@
             <p class="title p-h3 regular">
                 {{ props.data.title }}
             </p>
-            <p class="description t-regular c-secondary">
+            <p class="description t-regular c-tertiary">
                 {{ props.data.description }}
             </p>
         </div>
         <div class="work-item__tags">
             <ul>
                 <Tag
-                    v-for="tag in formattedTags"
+                    v-for="tag in props.data.tags"
                     :key="tag"
                     :label="tag"
                 />
@@ -70,7 +70,7 @@
     }
 
     // Compute the formatted tags
-    const formattedTags = computed(() => formatTags(tags));
+    const formattedTags = computed(() => formatTags(props.data.props));
 
 </script>
 
@@ -116,6 +116,7 @@
                 top: 0;
                 left: 0;
                 width: 100%;
+                height: 100%
             }
         }
 

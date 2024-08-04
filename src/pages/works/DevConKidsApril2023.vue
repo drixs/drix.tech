@@ -1,9 +1,9 @@
 <template>
     <div class="details-container">
         <header class="details-cover">
-            <img src="@/images/seawalk-industries/seawalk_cover.png" alt="">
+            <img src="@/images/devcon-kids-april-2023/devcon-kids-april-2023-cover.png" alt="">
             <h2 class="title semibold alt-font">
-                DevConKidsApril2023
+                Designing the Collaterals for DEVCON Kids Code Camp April 2023
             </h2>
             <ul class="tags-container">
                 <Tag v-for="tag in tags" :key="tag" :label="tag" />
@@ -11,32 +11,28 @@
         </header>
         <main class="main">
             <p class="main__text t-regular details-text">
-                Last November 2023, I created the logo for Protein Partner PH, an online shop for protein-rich snacks.
+                Taking place on Saturday, April 22, 2023, this DEVCON event was designed to immerse children aged 6 to
+                10 in the world of computer science and programming through the interactive platform of Undersea Arcade.
+                Spearheaded by DEVCON Cebu officers, the event not only facilitated gameplay but also served as an
+                educational avenue for teaching programming fundamentals in an engaging manner.
             </p>
             <div class="main__image-attachment">
-                <img src="@/images/seawalk-industries/seawalk_cover.png" alt="">
+                <img src="@/images/devcon-kids-april-2023/devcon-kids-april-2023-cover.png" alt="">
             </div>
             <p class="main__text t-regular details-text">
-                I used Adobe Illustrator to sketch out different logo ideas and refine them until they were just right.
+                As Vice President of Creatives, I designed teasers, event posters, and video backgrounds for the event.
+                My aim was to create a consistent look that captured the fun and educational spirit of the Code Camp.
+                Through graphic design, I aimed to captivate children's imaginations while reinforcing the event's
+                educational goals.
             </p>
             <div class="main__image-attachment">
-                <img src="@/images/seawalk-industries/seawalk_cover.png" alt="">
+                <img src="@/images/devcon-kids-april-2023/devcon-kids-april-2023-screenshot.png" alt="">
             </div>
             <p class="main__text t-regular details-text">
-                After lots of tweaking, I landed on a design that really captured what Protein Partner PH is all about.
+                The event turned out to be a resounding success. The kids, participants, and officers all had a wonderful
+                time engaging with one another, sharing knowledge, and teaching each other, which fostered a vibrant and
+                collaborative learning environment.
             </p>
-            <div class="main__image-attachment">
-                <img src="@/images/seawalk-industries/seawalk_cover.png" alt="">
-            </div>
-            <p class="main__text t-regular details-text">
-                Bright yellow was the color I chose for the logo to make it feel happy and healthy, matching the vibe of the brand. This color is all about energy and feeling good, which fits perfectly with Protein Partner PH's mission. Working closely with the client, we made sure the logo was exactly what they wanted.
-            </p>
-            <p class="main__text t-regular details-text">
-                Now, you can see the logo proudly displayed on Protein Partner PH's website (proteinpartner.ph) and Facebook page.
-            </p>
-            <div class="main__image-attachment">
-                <img src="@/images/seawalk-industries/seawalk_cover.png" alt="">
-            </div>
         </main>
     </div>
 </template>
@@ -54,9 +50,9 @@ export default {
     data() {
         return {
             tags: [
-                'UX Design',
-                'Landing Page',
-                'Case Study',
+                'Graphic Design',
+                'Poster Design',
+                'Volunteering'
             ]
         };
     }
@@ -64,5 +60,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    @import '@/stylesheets/work_details.scss';
+@import '@/stylesheets/work_details.scss';
 </style>
