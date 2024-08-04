@@ -13,7 +13,7 @@
                     Drix Lloyd Ponteres
                 </h4>
                 <p class="t-sm">
-                    hello@drix.tech
+                    drixlsp@gmail.com
                 </p>
             </div>
         </div>
@@ -34,7 +34,7 @@
                             UX Engineer
                         </p>
                         <p class="t-sm c-tertiary">
-                            hello@drix.tech
+                            drixlsp@gmail.com
                         </p>
                     </div>
                 </div>
@@ -112,71 +112,137 @@
         data() {
             return {
                 affiliations: [
+                {
+                    name: 'HQZen.com',
+                    role: [
+                        {
+                            name: 'Product Design Lead',
+                            year: '2022 to Present',
+                            description: [
+                                'In charge of overall product design direction',
+                                'Facilitate team members progress such as appraisals, team initiatives, and activities'
+                            ]
+                        },
+                        {
+                            name: 'UX Engineer',
+                            year: '2021',
+                            description: [
+                                'Focused on fixing UI bugs, design inconsistencies, and improving overall tech based on operational feedback',
+                            ]
+                        },
+                    ],
+                    image: 'src/images/affiliates/hqzen.png'
+                },
+                {
+                        name: 'Product Design Philippines',
+                        role: [
+                            {
+                                name: 'Graphic Designer',
+                                year: '2024',
+                                description: [
+                                    'Designing collaterals while spearheading events relating to product design and in fostering a design community in the Philippines'
+                                ]
+                            }
+                        ],
+                        image: 'src/images/affiliates/pdxph.png'
+                    },
                     {
-                        name: 'Todays Carolinian',
+                        name: '24Strats',
+                        role: [
+                            {
+                                name: 'Product Designer',
+                                year: '2022-2023',
+                                description: [
+                                    'Designed landing pages and logos for different projects',
+                                ]
+                            }
+                        ],
+                        image: 'src/images/affiliates/24strats.png'
+                    },
+                    {
+                        name: 'DEVCON Cebu',
+                        role: [
+                            {
+                                name: 'VP of Creatives',
+                                year: '2022-2024',
+                                description: [
+                                    'Assigned in leading the design direction for upcoming events, workshops, and campaigns',
+                                    'Volunteer in code camps spearheaded by DEVCON for students and kids'
+                                ]
+                            }
+                        ],
+                        image: 'src/images/affiliates/devcon-cebu.png'
+                    },
+                    {
+                        name: 'RideHero, Inc.',
+                        role: [
+                            {
+                                name: 'UI Designer',
+                                year: '2020',
+                                description: [
+                                    'Craft user-friendly mockups and prototypes for RideHero\'s main mobile application and its projects: Aguila, and Discover Cebu',
+                                    '',
+                                    'Research on different approaches for managing Facebook page content',
+                                ]
+                            }
+                        ],
+                        image: 'src/images/affiliates/ridehero.png'
+                    },
+                    {
+                        name: 'Symph',
+                        role: [
+                            {
+                                name: 'Web Design Intern',
+                                year: '2019',
+                                description: [
+                                    'Assigned to multiple teams as UI/UX designer',
+                                    'Studied UX principles and front-end development fundamentals',
+                                    'Worked on MATA – a project involving facial recognition technology'
+                                ]
+                            }
+                        ],
+                        image: 'src/images/affiliates/symph.png'
+                    },
+                    {
+                        name: 'Today\'s Carolnian',
                         role: [
                             {
                                 name: 'Senior Graphic Designer',
                                 year: '2018',
                                 description: [
-                                    'As a Software Developer, I am responsible for designing, coding, and maintaining software applications to meet the needs of our clients.',
-                                    'I work closely with a team of developers, product managers, and designers to create high-quality software solutions.'
+                                    'Work closely with art director in managing art department of the publication and lead the graphic design team',
                                 ]
                             },
                             {
                                 name: 'Graphic Designer',
                                 year: '2017',
                                 description: [
-                                    'As a Software Developer, I am responsible for designing, coding, and maintaining software applications to meet the needs of our clients.',
-                                    'I work closely with a team of developers, product managers, and designers to create high-quality software solutions.'
+                                    'Tasked to create graphics for magazine, newsletters, and online content',
                                 ]
                             },
                         ],
-                        image: 'https://picsum.photos/400/300'
+                        image: 'src/images/affiliates/todays-carolinian.png'
                     },
                     {
                         name: 'USC Computer Engineering Council',
                         role: [
                             {
-                                name: 'Senior Graphic Designer',
+                                name: 'Media and Infographics Director',
                                 year: '2018',
                                 description: [
-                                    'As a Software Developer, I am responsible for designing, coding, and maintaining software applications to meet the needs of our clients.',
-                                    'I work closely with a team of developers, product managers, and designers to create high-quality software solutions.'
+                                    'Lead creative direction while managing design associates',
                                 ]
                             },
                             {
-                                name: 'Graphic Designer',
+                                name: 'Media Councilor',
                                 year: '2017',
                                 description: [
-                                    'As a Software Developer, I am responsible for designing, coding, and maintaining software applications to meet the needs of our clients.',
-                                    'I work closely with a team of developers, product managers, and designers to create high-quality software solutions.'
+                                    'Design pubmats and posters for course, department, or school events',
+                                    'Participate in leadership training seminars'
                                 ]
                             },
                         ],
-                        image: 'https://picsum.photos/400/300'
-                    },
-                    {
-                        name: 'HQZen.com',
-                        role: [
-                            {
-                                name: 'Senior Graphic Designer',
-                                year: '2018',
-                                description: [
-                                    'As a Software Developer, I am responsible for designing, coding, and maintaining software applications to meet the needs of our clients.',
-                                    'I work closely with a team of developers, product managers, and designers to create high-quality software solutions.'
-                                ]
-                            },
-                            {
-                                name: 'Graphic Designer',
-                                year: '2017',
-                                description: [
-                                    'As a Software Developer, I am responsible for designing, coding, and maintaining software applications to meet the needs of our clients.',
-                                    'I work closely with a team of developers, product managers, and designers to create high-quality software solutions.'
-                                ]
-                            },
-                        ],
-                        image: 'https://picsum.photos/400/300'
+                        image: 'src/images/affiliates/cpe-council.png'
                     }
                 ],
                 specialties: [
@@ -190,14 +256,14 @@
                     {
                         name: 'Drix Lloyd Ponteres',
                         position: 'UX Engineer',
-                        email: 'hello@drix.tech'
+                        email: 'drixlsp@gmail.com'
                     }
                 ],
                 references: [
                     {
-                        name: 'Generil de los Santos',
-                        company: 'BPOSeats',
-                        contact: 'generil@bposeats.com',
+                        name: 'Patricia Tumulak',
+                        company: 'Full Scale',
+                        contact: 'tumulakpatricia@gmail.com',
                         position: 'UX Designer'
                     },
                     {
@@ -213,101 +279,101 @@
                         position: 'CTO'
                     }
                 ],
-                companies: [
-                    {
-                        name: 'HQZen.com',
-                        link: 'https://hqzen.com/',
-                        roles: [
-                            {
-                                name: 'Product Design Lead',
-                                duration: '2022 - Present',
-                                duties: [
-                                    'In charge of overall product design direction.',
-                                    'Facilitate team members progress such as appraisals, team initiatives, and activities.'
-                                ]
-                            },
-                            {
-                                name: 'Front-end Designer / UX Engineer',
-                                duration: '2021 - 2022',
-                                duties: [
-                                    'Focused on fixing UI bugs, design inconsistencies, and improving overall app based on operational feedback.',
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        name: '24Strats',
-                        link: 'https://www.linkedin.com/company/24strats/about/',
-                        roles: [
-                            {
-                                name: 'Designer',
-                                duration: '2022',
-                                duties: [
-                                    'Designed a website for a Turkish parish church.',
-                                    'Created logo and branding for Protein Partner PH.',
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        name: 'DEVCON Cebu',
-                        link: 'https://www.facebook.com/devconcebu/',
-                        roles: [
-                            {
-                                name: 'VP Creatives',
-                                duration: '2022-2024',
-                                duties: [
-                                    'Design pubmats and event posters to be posted in social media.',
-                                    'Volunteered in code camps and workshops.',
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        name: 'RideHero, Inc.',
-                        link: 'https://www.facebook.com/rideheroph/',
-                        roles: [
-                            {
-                                name: 'UI/UX Designer',
-                                duration: '2020',
-                                duties: [
-                                    'Collaborated with RideHero design team to build multiple products.',
-                                    'Designed RideHero - a ride hailing app targeted to buses and jeepneys.',
-                                    'Designed Aguila - an item delivery app to compete with top delivery apps in Cebu.',
-                                    'Designed Discover Cebu - a mobile app that promotes tourism in Cebu, Philippines.'
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        name: 'Symph',
-                        link: 'https://www.symph.co/',
-                        roles: [
-                            {
-                                name: 'Web Design Intern',
-                                duration: '2019',
-                                duties: [
-                                'Studied fundamentals of web development and UI design.',
-                                    'Worked on MATA Project – facial recognition application with a team of developers and project managers.'
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        name: 'University of San Carlos',
-                        link: 'https://www.usc.edu.ph/academics/schools/school-of-engineering/department-of-computer-engineering',
-                        roles: [
-                            {
-                                name: 'Bachelor of Science in Computer Engineering',
-                                duration: '2015 - 2020',
-                                duties: [
-                                    'Studied hardware concepts and software fundamentals.',
-                                    'Volunteered in various school organizations and help spearhead university-wide events.'
-                                ]
-                            }
-                        ]
-                    }
-                ],
+                // companies: [
+                //     {
+                //         name: 'HQZen.com',
+                //         link: 'https://hqzen.com/',
+                //         roles: [
+                //             {
+                //                 name: 'Product Design Lead',
+                //                 duration: '2022 - Present',
+                //                 duties: [
+                //                     'In charge of overall product design direction.',
+                //                     'Facilitate team members progress such as appraisals, team initiatives, and activities.'
+                //                 ]
+                //             },
+                //             {
+                //                 name: 'Front-end Designer / UX Engineer',
+                //                 duration: '2021 - 2022',
+                //                 duties: [
+                //                     'Focused on fixing UI bugs, design inconsistencies, and improving overall app based on operational feedback.',
+                //                 ]
+                //             }
+                //         ]
+                //     },
+                //     {
+                //         name: '24Strats',
+                //         link: 'https://www.linkedin.com/company/24strats/about/',
+                //         roles: [
+                //             {
+                //                 name: 'Designer',
+                //                 duration: '2022',
+                //                 duties: [
+                //                     'Designed a website for a Turkish parish church.',
+                //                     'Created logo and branding for Protein Partner PH.',
+                //                 ]
+                //             }
+                //         ]
+                //     },
+                //     {
+                //         name: 'DEVCON Cebu',
+                //         link: 'https://www.facebook.com/devconcebu/',
+                //         roles: [
+                //             {
+                //                 name: 'VP Creatives',
+                //                 duration: '2022-2024',
+                //                 duties: [
+                //                     'Design pubmats and event posters to be posted in social media.',
+                //                     'Volunteered in code camps and workshops.',
+                //                 ]
+                //             }
+                //         ]
+                //     },
+                //     {
+                //         name: 'RideHero, Inc.',
+                //         link: 'https://www.facebook.com/rideheroph/',
+                //         roles: [
+                //             {
+                //                 name: 'UI/UX Designer',
+                //                 duration: '2020',
+                //                 duties: [
+                //                     'Collaborated with RideHero design team to build multiple products.',
+                //                     'Designed RideHero - a ride hailing app targeted to buses and jeepneys.',
+                //                     'Designed Aguila - an item delivery app to compete with top delivery apps in Cebu.',
+                //                     'Designed Discover Cebu - a mobile app that promotes tourism in Cebu, Philippines.'
+                //                 ]
+                //             }
+                //         ]
+                //     },
+                //     {
+                //         name: 'Symph',
+                //         link: 'https://www.symph.co/',
+                //         roles: [
+                //             {
+                //                 name: 'Web Design Intern',
+                //                 duration: '2019',
+                //                 duties: [
+                //                 'Studied fundamentals of web development and UI design.',
+                //                     'Worked on MATA Project – facial recognition application with a team of developers and project managers.'
+                //                 ]
+                //             }
+                //         ]
+                //     },
+                //     {
+                //         name: 'University of San Carlos',
+                //         link: 'https://www.usc.edu.ph/academics/schools/school-of-engineering/department-of-computer-engineering',
+                //         roles: [
+                //             {
+                //                 name: 'Bachelor of Science in Computer Engineering',
+                //                 duration: '2015 - 2020',
+                //                 duties: [
+                //                     'Studied hardware concepts and software fundamentals.',
+                //                     'Volunteered in various school organizations and help spearhead university-wide events.'
+                //                 ]
+                //             }
+                //         ]
+                //     }
+                // ],
                 showDiv: false,
                 yPositionToShowDiv: 120
             };
@@ -338,7 +404,6 @@
 
         computed: {
             isMobile() {
-                // Check if the viewport width is less than a certain breakpoint (e.g., 768px for common mobile devices)
                 return window.innerWidth < 768; // Adjust the breakpoint as needed
             }
         }

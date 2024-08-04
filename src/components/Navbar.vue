@@ -7,10 +7,16 @@
                 </h1>
             </li>
             <li>
-                <i
+                <p
+                    class="t-sm"
+                    @click="$emit('toggle-menu')"
+                >
+                    Menu
+                </p>
+                <!-- <i
                     @click="$emit('toggle-menu')"
                     class="fa-solid fa-circle-dot"
-                ></i>
+                ></i> -->
             </li>
         </ul>
     </nav>
@@ -60,7 +66,7 @@
             }
         }
 
-        i {
+        i,p {
             cursor: pointer;
         }
     }

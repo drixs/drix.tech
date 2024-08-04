@@ -2,23 +2,22 @@
     <div class="work-item">
         <div class="work-item__image-container">
             <img
-                src="https://picsum.photos/400/300"
+                :src="props.data.image"
                 alt="Work item"
             >
         </div>
         <div class="work-item__details">
             <p class="title p-h3 regular">
-                Rediscovering Cebu’s Tourism after a Global Pandemic with Discover Cebu Lorem ipsum dolor sit
+                {{ props.data.title }}
             </p>
-            <p class="description t-regular c-secondary">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quisquam
-                itaque recusandae cumque, dolorem nulla maiores dignissimos, ad id hic cupiditate
+            <p class="description t-regular c-tertiary">
+                {{ props.data.description }}
             </p>
         </div>
         <div class="work-item__tags">
             <ul>
                 <Tag
-                    v-for="tag in formattedTags"
+                    v-for="tag in props.data.tags"
                     :key="tag"
                     :label="tag"
                 />
@@ -30,6 +29,7 @@
 <script setup>
     import Tag from '@/components/generics/Tag.vue';
     import { computed } from "vue";
+    import { defineProps } from 'vue';
 
     const tags = [
         'Graphic Design',
@@ -39,8 +39,14 @@
         'Landing Page'
     ]
 
-    // Define the tags array as a reactive reference
-    // const tags = ref(['Tag1', 'Tag2', 'Tag3', 'Tag4', 'Tag5']);
+
+    // Define props
+    const props = defineProps({
+        data: {
+            type: Array,
+            required: true
+        }
+    });
 
     // Function to format tags
     function formatTags(tagsArray) {
@@ -64,7 +70,7 @@
     }
 
     // Compute the formatted tags
-    const formattedTags = computed(() => formatTags(tags));
+    const formattedTags = computed(() => formatTags(props.data.props));
 
 </script>
 
@@ -110,6 +116,7 @@
                 top: 0;
                 left: 0;
                 width: 100%;
+                height: 100%
             }
         }
 
