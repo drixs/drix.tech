@@ -2,17 +2,16 @@
     <div class="work-item">
         <div class="work-item__image-container">
             <img
-                src="https://picsum.photos/400/300"
+                :src="props.data.image"
                 alt="Work item"
             >
         </div>
         <div class="work-item__details">
             <p class="title p-h3 regular">
-                Rediscovering Cebu’s Tourism after a Global Pandemic with Discover Cebu Lorem ipsum dolor sit
+                {{ props.data.title }}
             </p>
             <p class="description t-regular c-secondary">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quisquam
-                itaque recusandae cumque, dolorem nulla maiores dignissimos, ad id hic cupiditate
+                {{ props.data.description }}
             </p>
         </div>
         <div class="work-item__tags">
@@ -30,6 +29,7 @@
 <script setup>
     import Tag from '@/components/generics/Tag.vue';
     import { computed } from "vue";
+    import { defineProps } from 'vue';
 
     const tags = [
         'Graphic Design',
@@ -39,8 +39,14 @@
         'Landing Page'
     ]
 
-    // Define the tags array as a reactive reference
-    // const tags = ref(['Tag1', 'Tag2', 'Tag3', 'Tag4', 'Tag5']);
+
+    // Define props
+    const props = defineProps({
+        data: {
+            type: Array,
+            required: true
+        }
+    });
 
     // Function to format tags
     function formatTags(tagsArray) {

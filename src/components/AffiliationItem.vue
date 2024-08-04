@@ -77,21 +77,24 @@
                 top: 0;
                 left: 0;
                 width: 100%;
+                height: 100%
             }
         }
 
         &__role {
             @include flex-column();
-            gap: 12px;
+            gap: 8px;
 
             &-main {
                 @include flex-align-center();
                 justify-content: space-between;
+                font-size: 15px;
             }
 
             &-description {
                 line-height: 150%;
-                color: $gray-500;
+                color: $gray-400;
+                width: 85%;
             }
         }
     }
