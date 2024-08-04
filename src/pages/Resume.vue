@@ -13,7 +13,7 @@
                     Drix Lloyd Ponteres
                 </h4>
                 <p class="t-sm">
-                    hello@drix.tech
+                    drixlsp@gmail.com
                 </p>
             </div>
         </div>
@@ -34,7 +34,7 @@
                             UX Engineer
                         </p>
                         <p class="t-sm c-tertiary">
-                            hello@drix.tech
+                            drixlsp@gmail.com
                         </p>
                     </div>
                 </div>
@@ -256,7 +256,7 @@
                     {
                         name: 'Drix Lloyd Ponteres',
                         position: 'UX Engineer',
-                        email: 'hello@drix.tech'
+                        email: 'drixlsp@gmail.com'
                     }
                 ],
                 references: [
