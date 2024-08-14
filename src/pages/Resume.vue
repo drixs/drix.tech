@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="skills__container">
-                    <h2 class="p-h2 skills__container-name semibold alt-font">
+                    <h2 class="p-h3 skills__container-name semibold alt-font">
                         Specialties
                     </h2>
                     <div class="skills__container-list">
@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="skills__container">
-                    <h2 class="p-h2 skills__container-name semibold alt-font">
+                    <h2 class="p-h3 skills__container-name semibold alt-font">
                         Others
                     </h2>
                     <ul class="skills__container-list">
@@ -65,7 +65,7 @@
                     </ul>
                 </div>
                 <div class="reference__container">
-                    <h2 class="p-h2 reference__container-name semibold alt-font">
+                    <h2 class="p-h3 reference__container-name semibold alt-font">
                         Character Reference
                     </h2>
                     <ul class="reference__container-list">
@@ -79,6 +79,14 @@
                             <p class="t-sm c-tertiary"> {{ reference.contact }} </p>
                         </li>
                     </ul>
+                </div>
+                <div>
+                    <Button
+                        class="primary"
+                        @click="goToLink(resumeLink)"
+                    >
+                        Download Resume
+                    </Button>
                 </div>
             </section>
             <section class="right">
@@ -97,6 +105,7 @@
 <script>
     import ContentBody from '../components/generics/ContentBody.vue';
     import Tag from '../components/generics/Tag.vue';
+    import Button from '../components/generics/Button.vue';
     import AffiliationItem from '@/components/AffiliationItem.vue';
 
     export default {
@@ -106,11 +115,13 @@
         components: {
             ContentBody,
             Tag,
-            AffiliationItem
+            AffiliationItem,
+            Button
         },
 
         data() {
             return {
+                resumeLink: 'https://drive.google.com/file/d/1zA2_mWAlxj4jXiamxRvIci5fb8A7EgVA/view?usp=sharing',
                 affiliations: [
                 {
                     name: 'HQZen.com',
@@ -441,7 +452,7 @@
 
     .left {
         @include flex-column();
-        gap: 40px;
+        gap: 32px;
         height: max-content;
         position: sticky;
         top: calc($navbar-height + $padding-height);

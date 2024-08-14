@@ -32,11 +32,18 @@
 
         methods: {
             changeRoute(route) {
-                this.$router.push(route);
-                this.$emit('close')
+                // this.$router.push(route);
+                // this.$emit('close')
+                this.$router
+                    .push({ path: route })
+                    .then(
+                        () => {
+                            this.$router.go(0);
+                            this.$emit('close');
+                    })
+                }
             }
         }
-    }
 </script>
 
 <style lang="scss" scoped>

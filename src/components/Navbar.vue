@@ -2,7 +2,10 @@
     <nav id="nav">
         <ul>
             <li class="nav-item">
-                <h1 class="alt-font nav-item__left">
+                <h1
+                    class="alt-font nav-item__left"
+                    @click="goTo('/')"
+                >
                     drix.tech
                 </h1>
             </li>
@@ -25,7 +28,13 @@
 <script>
     export default {
         // eslint-disable-next-line vue/multi-word-component-names
-        name: 'Navbar'
+        name: 'Navbar',
+
+        methods: {
+            goTo(path) {
+                this.$router.push({ path: path })
+            }
+        }
     }
 </script>
 
@@ -66,7 +75,7 @@
             }
         }
 
-        i,p {
+        i,p,h1 {
             cursor: pointer;
         }
     }

@@ -22,7 +22,7 @@
 
     .tag {
         @include clear-list-formatting();
-        padding: 4px 8px;
+        padding: 2px 4px;
         border-radius: 8px;
         background-color: rgba($color: $white, $alpha: 0.1);
         font-size: 14px;
