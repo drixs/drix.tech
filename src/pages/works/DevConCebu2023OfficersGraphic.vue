@@ -1,7 +1,7 @@
 <template>
     <div class="details-container">
         <header class="details-cover">
-            <img src="/images/devcon-cebu-officers-2023/devcon-cebu-officers-2023-cover.png" alt="">
+            <img src="/images/devcon-cebu-officers-2023/devcon-cebu-officers-2023-cover.webp" alt="">
             <h2 class="title semibold alt-font">
                 Kickstarting DEVCON Cebu 2023: Showcasing Chapter Officers
             </h2>
@@ -24,7 +24,7 @@
                 maintaining the brand's unique identity.
             </p>
             <div class="main__image-attachment">
-                <img src="/images/devcon-cebu-officers-2023/devcon-cebu-officers-2023-draft.png" alt="">
+                <img src="/images/devcon-cebu-officers-2023/devcon-cebu-officers-2023-draft.webp" alt="">
             </div>
             <p class="main__text t-regular details-text">
                 For the next step in determining how to color the visual elements, I decided to utilize gradients because
@@ -33,10 +33,10 @@
                 aesthetic would be both striking and harmonious.
             </p>
             <div class="main__image-attachment">
-                <img src="/images/devcon-cebu-officers-2023/devcon-cebu-officers-2023-white.png" alt="">
+                <img src="/images/devcon-cebu-officers-2023/devcon-cebu-officers-2023-white.webp" alt="">
             </div>
             <div class="main__image-attachment">
-                <img src="/images/devcon-cebu-officers-2023/devcon-cebu-officers-2023-black.png" alt="">
+                <img src="/images/devcon-cebu-officers-2023/devcon-cebu-officers-2023-black.webp" alt="">
             </div>
             <p class="main__text t-regular details-text">
                 These materials were shared on the official Facebook page and received a lot of engagement from the tech
@@ -44,7 +44,7 @@
                 the pandemic.
             </p>
             <div class="main__image-attachment">
-                <img src="/images/devcon-cebu-officers-2023/devcon-cebu-officers-2023-cover.png" alt="">
+                <img src="/images/devcon-cebu-officers-2023/devcon-cebu-officers-2023-cover.webp" alt="">
             </div>
         </main>
     </div>

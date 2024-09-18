@@ -1,7 +1,7 @@
 <template>
     <div class="details-container">
         <header class="details-cover">
-            <img src="/images/seawalk-industries/seawalk_cover.png" alt="">
+            <img src="/images/seawalk-industries/seawalk_cover.webp" alt="">
             <h2 class="title semibold alt-font">
                 Showcasing the Technology and Services behind the success of Seawalk Industries Inc.
             </h2>
@@ -23,7 +23,7 @@
                 landing page.‍
             </p>
             <div class="main__image-attachment">
-                <img src="/images/seawalk-industries/seawalk_wireframes.png" alt="">
+                <img src="/images/seawalk-industries/seawalk_wireframes.webp" alt="">
             </div>
             <p class="main__text t-regular details-text">
                 Following the atomic design approach, I began with the fundamental elements, including typography,
@@ -44,7 +44,7 @@
                 page.‍
             </p>
             <div class="main__image-attachment">
-                <img src="/images/seawalk-industries/seawalk_components.png" alt="">
+                <img src="/images/seawalk-industries/seawalk_components.webp" alt="">
             </div>
             <p class="main__text t-regular details-text">
                 On the landing page, visitors are welcomed by the hero section, strategically designed to encapsulate
@@ -58,7 +58,7 @@
                 communication and potential business partnerships.‍
             </p>
             <div class="main__image-attachment">
-                <img src="/images/seawalk-industries/seawalk_hero.png" alt="">
+                <img src="/images/seawalk-industries/seawalk_hero.webp" alt="">
             </div>
             <p class="main__text t-regular details-text">
                 In the subsequent sections, namely "About" and "Products and Services," we maintain a simple yet
@@ -67,10 +67,10 @@
                 insights into our company's background, values, and the range of products and services we offer.‍
             </p>
             <div class="main__image-attachment">
-                <img src="/images/seawalk-industries/seawalk_about.png" alt="">
+                <img src="/images/seawalk-industries/seawalk_about.webp" alt="">
             </div>
             <div class="main__image-attachment">
-                <img src="/images/seawalk-industries/seawalk_products.png" alt="">
+                <img src="/images/seawalk-industries/seawalk_products.webp" alt="">
             </div>
             <p class="main__text t-regular details-text">
                 In the "Clients and Projects" section, we showcase notable previous clients and projects undertaken by
@@ -80,7 +80,7 @@
                 highlights its successful collaborations.
             </p>
             <div class="main__image-attachment">
-                <img src="/images/seawalk-industries/seawalk_clients.png" alt="">
+                <img src="/images/seawalk-industries/seawalk_clients.webp" alt="">
             </div>
             <p class="main__text t-regular details-text">
                 Finally, in the "Contact Us" section, I integrated a map displaying the company's office location, along
@@ -88,7 +88,7 @@
                 easy access to means of communication, enabling them to reach out at their convenience.‍
             </p>
             <div class="main__image-attachment">
-                <img src="/images/seawalk-industries/seawalk_contact.png" alt="">
+                <img src="/images/seawalk-industries/seawalk_contact.webp" alt="">
             </div>
             <p class="main__text t-regular details-text">
                 In essence, the primary objective of the landing page is to effectively showcase the company's offerings
@@ -97,7 +97,7 @@
                 target audience.
             </p>
             <div class="main__image-attachment">
-                <img src="/images/seawalk-industries/seawalk_cover.png" alt="">
+                <img src="/images/seawalk-industries/seawalk_cover.webp" alt="">
             </div>
         </main>
     </div>

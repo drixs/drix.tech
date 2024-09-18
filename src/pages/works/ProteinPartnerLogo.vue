@@ -1,7 +1,7 @@
 <template>
     <div class="details-container">
         <header class="details-cover">
-            <img src="/images/protein-partner/protein-partner.png" alt="">
+            <img src="/images/protein-partner/protein-partner.webp" alt="">
             <h2 class="title semibold alt-font">
                 Support Local – Designing Protein Partner PH's Logo
             </h2>
@@ -20,13 +20,13 @@
                 vision.
             </p>
             <div class="main__image-attachment">
-                <img src="/images/protein-partner/protein-partner-outline.png" alt="">
+                <img src="/images/protein-partner/protein-partner-outline.webp" alt="">
             </div>
             <p class="main__text t-regular details-text">
                 After lots of tweaking, I landed on a design that really captured what Protein Partner PH is all about.
             </p>
             <div class="main__image-attachment">
-                <img src="/images/protein-partner/protein-partner-colors.png" alt="">
+                <img src="/images/protein-partner/protein-partner-colors.webp" alt="">
             </div>
             <p class="main__text t-regular details-text">
                 Bright yellow was the color I chose for the logo to make it feel happy and healthy, matching the vibe of
@@ -39,7 +39,7 @@
                 brand's identity and values.
             </p>
             <div class="main__image-attachment">
-                <img src="/images/protein-partner/protein-partner.png" alt="">
+                <img src="/images/protein-partner/protein-partner.webp" alt="">
             </div>
         </main>
     </div>
